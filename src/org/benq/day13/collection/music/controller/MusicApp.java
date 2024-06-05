@@ -1,7 +1,9 @@
 package org.benq.day13.collection.music.controller;
 
+import java.util.Collections;
 import java.util.List;
 
+import org.benq.day13.collection.music.model.DescTitle;
 import org.benq.day13.collection.music.model.ManageMusic;
 import org.benq.day13.collection.music.model.Music;
 import org.benq.day13.collection.music.view.ViewMusic;
@@ -66,7 +68,8 @@ public class MusicApp {
 					mng.sortByTitleASC();
 					break;
 				case 8:
-					mng.sortByTitleDESC();
+					Collections.sort(mList,new DescTitle());
+//					mng.sortByTitleDESC();
 					break;
 				case 9:
 					mng.sortBySingerASC();

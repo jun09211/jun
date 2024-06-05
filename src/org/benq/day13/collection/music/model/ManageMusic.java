@@ -1,6 +1,7 @@
 package org.benq.day13.collection.music.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -63,22 +64,28 @@ public class ManageMusic {
 
 	public void sortByTitleASC() {
 		// collection -list,set,map 크기 -size()
+//		List<String> strList= new ArrayList<String>();
+//		strList.add("김만우");
+//		strList.add("강진형");
+//		strList.add("박은진");
+//		Collections.sort(strList);//기본 오름차순 정렬
+		Collections.sort(mList);
 		
-		for(int i=0;i<mList.size();i++) {
-			for(int j=0;j<(mList.size()-1)-i;j++){
-				//버블 정렬 특징
-				Music mOne= mList.get(j);
-				Music mTwo=mList.get(j+1);
-				//문제점 : 객체비교를 부등호로는 무리
-				//비교해야 하는 것은 곡명
-				//title을 서로 비교하여 ㄱ보다 늦은 순서인 경우 교체
-				if(mOne.getTitle().compareTo(mTwo.getTitle())>0) {
-					Music temp=mOne;
-					mList.set(j, mTwo);
-					mList.set(j+1, temp);
-				}
-			}
-		}
+//		for(int i=0;i<mList.size();i++) {
+//			for(int j=0;j<(mList.size()-1)-i;j++){
+//				//버블 정렬 특징
+//				Music mOne= mList.get(j);
+//				Music mTwo=mList.get(j+1);
+//				//문제점 : 객체비교를 부등호로는 무리
+//				//비교해야 하는 것은 곡명
+//				//title을 서로 비교하여 ㄱ보다 늦은 순서인 경우 교체
+//				if(mOne.getTitle().compareTo(mTwo.getTitle())>0) {
+//					Music temp=mOne;
+//					mList.set(j, mTwo);
+//					mList.set(j+1, temp);
+//				}
+//			}
+//		}
 
 	}
 

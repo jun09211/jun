@@ -1,6 +1,6 @@
 package org.benq.day13.collection.music.model;
 
-public class Music {
+public class Music implements Comparable<Music>{
 	private String title;
 	private String singer;
 	public Music() {}
@@ -31,5 +31,13 @@ public class Music {
 	public String toString() {
 		return "Music [title=" + title + ", singer=" + singer + "]";
 	}
+
+
+	@Override
+	public int compareTo(Music o) {
+		
+		return this.title.compareTo(o.getTitle());
+	}
+	
 	
 }
