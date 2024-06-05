@@ -17,4 +17,8 @@ public class Exam_Calendar {
 		
 		}
 	
+	public void printDate() {
+		
+	}
+	
 }
