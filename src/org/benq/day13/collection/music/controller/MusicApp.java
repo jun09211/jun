@@ -61,7 +61,6 @@ public class MusicApp {
 					//수정할 정보
 					music = mng.searchMusic(title2);
 					music = view.modifyMusic(music);
-					
 					mng.modifyMusic(index,music);
 					break;
 				case 7:
