@@ -25,7 +25,7 @@ import java.util.Scanner;
 		}
 	}
 	
-	private static int printMenu() {
+	static int printMenu() {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("=====메인 메뉴=====");
 		System.out.println("1.성적입력");
